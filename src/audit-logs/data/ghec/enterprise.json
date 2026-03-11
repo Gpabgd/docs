@@ -2987,6 +2987,41 @@
     ]
   },
   {
+    "action": "business.organizations_limit_reached",
+    "description": "An enterprise has reached its organizations limit.",
+    "docs_reference_links": "N/A",
+    "fields": [
+      "@timestamp",
+      "_document_id",
+      "action",
+      "actor",
+      "actor_id",
+      "business",
+      "business_id",
+      "hashed_token",
+      "org",
+      "org_id",
+      "programmatic_access_type",
+      "repo",
+      "repo_id",
+      "repository",
+      "repository_id",
+      "request_access_security_header",
+      "request_id",
+      "token_id",
+      "token_scopes",
+      "user",
+      "user_id",
+      "user_agent",
+      "name",
+      "limit",
+      "count",
+      "created_at",
+      "operation_type",
+      "actor_is_bot"
+    ]
+  },
+  {
     "action": "business.organizations_limit_warning",
     "description": "An enterprise is approaching its organizations limit.",
     "docs_reference_links": "N/A",
@@ -15234,6 +15269,40 @@
     ]
   },
   {
+    "action": "org.members_limit_warning",
+    "description": "An organization is approaching its members limit.",
+    "docs_reference_links": "N/A",
+    "fields": [
+      "@timestamp",
+      "_document_id",
+      "action",
+      "actor",
+      "actor_id",
+      "business",
+      "business_id",
+      "hashed_token",
+      "org",
+      "org_id",
+      "programmatic_access_type",
+      "repo",
+      "repo_id",
+      "repository",
+      "repository_id",
+      "request_access_security_header",
+      "request_id",
+      "token_id",
+      "token_scopes",
+      "user",
+      "user_id",
+      "user_agent",
+      "limit",
+      "count",
+      "created_at",
+      "operation_type",
+      "actor_is_bot"
+    ]
+  },
+  {
     "action": "org.oauth_app_access_approved",
     "description": "Access to an organization was granted for an OAuth App.",
     "docs_reference_links": "/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization",
@@ -18767,7 +18836,7 @@
       "operation_type",
       "actor_is_bot"
     ],
-    "docs_reference_titles": "About custom organization roles"
+    "docs_reference_titles": "Permissions of custom organization roles"
   },
   {
     "action": "organization_role.create",
@@ -18804,7 +18873,7 @@
       "operation_type",
       "actor_is_bot"
     ],
-    "docs_reference_titles": "About custom organization roles"
+    "docs_reference_titles": "Permissions of custom organization roles"
   },
   {
     "action": "organization_role.destroy",
@@ -18840,7 +18909,7 @@
       "created_at",
       "operation_type"
     ],
-    "docs_reference_titles": "About custom organization roles"
+    "docs_reference_titles": "Permissions of custom organization roles"
   },
   {
     "action": "organization_role.revoke",
@@ -18874,7 +18943,7 @@
       "created_at",
       "operation_type"
     ],
-    "docs_reference_titles": "About custom organization roles"
+    "docs_reference_titles": "Permissions of custom organization roles"
   },
   {
     "action": "organization_role.update",
@@ -18913,7 +18982,7 @@
       "actor_is_bot",
       "old_base_role"
     ],
-    "docs_reference_titles": "About custom organization roles"
+    "docs_reference_titles": "Permissions of custom organization roles"
   },
   {
     "action": "organization_wide_project_base_role.update",
